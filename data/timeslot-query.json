@@ -1,0 +1,22 @@
+{
+  "bookingSession": {
+
+    "licenceId": 5,
+    "bookingModeId": 0,
+    "ignoreDebt": false,
+    "ignoreBookingHindrance": false,
+    "excludeExaminationCategories": [],
+    "rescheduleTypeId": 0,
+    "paymentIsActive": false,
+    "paymentReference": null,
+    "paymentUrl": null
+  },
+  "occasionBundleQuery": {
+    "startDate": "2020-04-28T22:00:00.000Z",
+    "locationId": 1000001,
+    "languageId": 13,
+    "tachographTypeId": 1,
+    "occasionChoiceId": 1,
+    "examinationTypeId": 3
+  }
+}

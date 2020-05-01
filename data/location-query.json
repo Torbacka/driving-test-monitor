@@ -1,0 +1,13 @@
+{
+  "bookingSession": {
+    "licenceId": "5",
+    "bookingModeId": 0,
+    "ignoreDebt": false,
+    "ignoreBookingHindrance": false,
+    "excludeExaminationCategories": [],
+    "rescheduleTypeId": 0,
+    "paymentIsActive": false,
+    "paymentReference": null,
+    "paymentUrl": null
+  }
+}
