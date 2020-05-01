@@ -125,7 +125,7 @@ def calc_distance(coord1, coord2):
 def get_timeslots(location):
     with open('data/timeslot-query.json') as file:
         data = json.load(file)
-        data['socialSecurityNumber'] = ssn
+        data['bookingSession']['socialSecurityNumber'] = ssn
         data['occasionBundleQuery']['startDate'] = datetime.now().astimezone().isoformat()
         data['occasionBundleQuery']['locationId'] = location['location']['id']
         print(data['occasionBundleQuery']['startDate'])
@@ -139,7 +139,7 @@ def get_locations():
     if not os.path.exists(location_file_path):
         with open('data/location-query.json') as file:
             data = json.load(file)
-            data['socialSecurityNumber'] = ssn
+            data['bookingSession']['socialSecurityNumber'] = ssn
             response = session.post(f'{base_url}/search-information', json=data, headers=common_headers).json()
             locations = response['data']['locations']
             with open(location_file_path, 'w') as location_file:

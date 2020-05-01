@@ -1,2 +1,3 @@
 .idea
 *.iml
+data/timeslots_per_city.json
